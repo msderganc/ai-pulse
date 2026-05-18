@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Auto-repackage ai-pulse.skill when skill source files change.
+#
+# Triggers on staged changes to SKILL.md or references/*.md, regenerates the
+# .skill archive via scripts/repackage.py, and stages the result so the
+# packaged distribution stays in sync with source.
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# Skip if no source files are staged
+if ! git diff --cached --name-only | grep -qE '^(SKILL\.md|references/.*\.md)$'; then
+    exit 0
+fi
+
+echo "[pre-commit] Source files changed — repackaging ai-pulse.skill..."
+python3 "${REPO_ROOT}/scripts/repackage.py"
+git add "${REPO_ROOT}/ai-pulse.skill"

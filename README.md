@@ -41,10 +41,20 @@ ai-pulse.skill                              Packaged distribution for Claude Des
 
 ## Repackaging
 
-After editing the skill, repackage with:
+A pre-commit hook auto-regenerates `ai-pulse.skill` whenever `SKILL.md` or any file in `references/` is staged for commit. The packaged `.skill` is added to the same commit so the distribution stays in sync with source.
+
+**One-time setup after cloning:**
 
 ```bash
-python3 -m scripts.package_skill /path/to/this/repo
+git config core.hooksPath .githooks
 ```
 
-from inside the skill-creator plugin directory.
+`core.hooksPath` is a local repo config and doesn't persist on clone, so this step is required once per checkout.
+
+**Manual repackaging** (no source changes staged, or testing the script):
+
+```bash
+python3 scripts/repackage.py
+```
+
+The repackager is self-contained — it uses only Python's `zipfile` module, no dependency on the skill-creator plugin.

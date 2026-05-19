@@ -210,7 +210,7 @@ Volume guidance for a <1000 word briefing:
 
 ### 4. Draft each section
 
-**Before drafting, read `references/exemplar-issue.md`** — a real, user-approved issue. It is the ground truth for formatting. Then consult `references/structure-template.md` for the explicit hierarchy table and inline conventions.
+**Before drafting, read both exemplars**: `references/exemplar-issue.md` *(compact reference, original format)* and `references/exemplar-march-may-2026.md` *(mature reference, headline-style titles and fully developed descriptive Detail voice at scale)*. They are the ground truth for formatting and voice. Then consult `references/structure-template.md` for the explicit hierarchy table and inline conventions.
 
 Key formatting points the exemplar establishes (easy to get wrong if you rely on intuition):
 
@@ -338,7 +338,9 @@ Otherwise, make the call and proceed.
 
 ## Reference files
 
-- **`references/exemplar-issue.md`** — a real, user-approved AI Pulse. **Read this first** when drafting. When prose templates and the exemplar disagree on a formatting detail, the exemplar wins. The exemplar shows the canonical heading hierarchy (shallow — `###` for Meta Trend, `####` for sections, bold standalone lines for development titles), inline `**Detail:**` / `**Why you care:**` formatting, italic parenthetical clarifications, bold inline emphasis, and `------` horizontal rules between developments.
+- **`references/exemplar-issue.md`** and **`references/exemplar-march-may-2026.md`** — two real, user-approved AI Pulses. **Read both before drafting.** When prose templates and an exemplar disagree on a formatting detail, the exemplar wins.
+  - `exemplar-issue.md` — original compact reference. Lower bound on entry density. Canonical for basic structure: shallow heading hierarchy *(`###` for Meta Trend, `####` for sections, bold standalone lines for development titles)*, inline `**Detail:**` / `**Why you care:**` formatting, italic parenthetical clarifications, `------` rules between developments.
+  - `exemplar-march-may-2026.md` — mature reference. Upper bound on entry density and canonical for voice and title style: headline-style entry titles *("Codex gains direct computer control...", "Claude completes the Microsoft 365 suite...")*, fully developed descriptive Detail voice *("X is Y's [latest/new] Z, featuring…, excelling at…, replacing/competing with…")*, larger entries (~90–140 words each), and per-section density at scale (15 entries).
 - `references/structure-template.md` — the exact document template with heading hierarchy table, inline formatting conventions, and section ordering rules.
 - `references/voice-and-banned-phrases.md` — full voice rules, banned phrases, accessibility constraints, and the test for when hedging carries content vs. cushions a missing view.
 - `references/content-priorities.md` — what to include vs. deprioritize, the selection test, and the hunting list of underreported categories.

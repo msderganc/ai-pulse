@@ -1,6 +1,6 @@
 # AI Pulse — Document Structure Template
 
-Use this exact structure. The skeleton is not optional — readers expect this shape and scan for it. Always read `exemplar-issue.md` in this directory alongside this file: the exemplar is ground truth for formatting choices that prose can't fully convey (heading depth, inline emphasis, italic clarifications, horizontal rules).
+Use this exact structure. The skeleton is not optional — readers expect this shape and scan for it. Always read both exemplars in this directory alongside this file: `exemplar-issue.md` *(original compact reference)* and `exemplar-march-may-2026.md` *(mature reference with headline titles, full descriptive voice, and per-section density at scale)*. The exemplars are ground truth for formatting choices that prose can't fully convey *(heading depth, inline emphasis, italic clarifications, horizontal rules, title style, entry density)*.
 
 ## Heading hierarchy (important — easy to get wrong)
 
@@ -194,6 +194,6 @@ If the briefing trends toward 3,500+ words, you almost certainly kept items that
 - Not a generic exhortation to "stay agile" or "invest in AI literacy"
 - If you don't have a sharp closing thought, the last development entry is the ending. That's fine — the exemplar ends on the EU AI Act entry with no wrap-up.
 
-## When in doubt, look at the exemplar
+## When in doubt, look at the exemplars
 
-`exemplar-issue.md` in this directory is a real, approved AI Pulse. When this template and the exemplar disagree on a detail, the exemplar wins — update this template to match.
+Both `exemplar-issue.md` and `exemplar-march-may-2026.md` are real, approved AI Pulses. When this template and either exemplar disagree on a detail, the exemplar wins — update this template to match. When the two exemplars disagree *(e.g., entry density, title style, voice)*, treat `exemplar-march-may-2026.md` as the more recent canonical bar; it carries the mature voice and title conventions the briefings have evolved into.

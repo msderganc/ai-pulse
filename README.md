@@ -32,10 +32,12 @@ Invoke `/ai-pulse <window>` (e.g. `/ai-pulse March to May`). The skill runs:
 ```
 SKILL.md                                    Workflow entry point
 references/
-  exemplar-issue.md                         Ground-truth approved example
+  exemplar-issue.md                         Ground-truth approved example (compact)
+  exemplar-march-may-2026.md                Ground-truth approved example (mature, canonical)
   structure-template.md                     Format, headings, voice, title convention
   voice-and-banned-phrases.md               Voice rules, banned phrases, accessibility
   content-priorities.md                     Selection criteria, required coverage
+  deliverable-format.md                     Cadence, filename, front matter, summary block
 ai-pulse.skill                              Packaged distribution for Claude Desktop
 ```
 

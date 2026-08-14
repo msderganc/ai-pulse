@@ -27,7 +27,9 @@ Follow these steps in order. Don't skip the meta-trend or the humanizer pass —
 
 ### 1. Establish the window and gather material
 
-Today's date is fixed by the environment. Default window: the prior 1–2 calendar months ending the day before today. Confirm with the user if the framing is ambiguous.
+Today's date is fixed by the environment.
+
+**Cadence: monthly, published in the first business days of the month, covering the prior full calendar month.** A briefing written in early September covers August 1–31, so the title names a whole month and the window is unambiguous to the reader. Widen to two months only when a single month is genuinely thin *(say so in the issue rather than padding)* or when an issue slipped and the next one has to cover the gap. See `references/deliverable-format.md`. Confirm with the user if the framing is ambiguous.
 
 Sources of material, in order of preference:
 1. **User-provided input** — if the user dumped articles, links, or notes, treat that as the primary source.
@@ -301,25 +303,11 @@ Do not skip this step. The user has explicitly required it.
 
 ### 7. Write the file
 
-Save the final briefing to `~/work-docs/ai/reports/` per the global Markdown Deliverable Policy. Filename pattern: `YYYY-MM-DD_HHMM_ai-pulse-<month-year>.md` (use today's date, with the briefing's coverage month in the topic slug, e.g., `2026-05-18_1430_ai-pulse-april-may-2026.md`).
+**Read `references/deliverable-format.md`** — it is the authoritative output contract and carries the exact front matter, the summary-block structure, the filename pattern, and the cadence. Follow it rather than reconstructing the format from memory.
 
-Include the required YAML front matter from the global policy:
+In brief: save to `~/work-docs/ai/reports/` (create it if needed) as `YYYY-MM-DD_HHMM_ai-pulse-<window-slug>.md`, with YAML front matter followed by a `## Summary` block *(one-paragraph summary, key topics, scope in/out, assumptions)* before the document body begins.
 
-```yaml
----
-title: AI Ecosystem & Market Update — [Month Year]
-topics: [ai, executive-briefing, market-update]
-date_created: YYYY-MM-DD
-version: 1
-purpose: Monthly AI Pulse briefing for senior consultants, operators, and business leaders
-audience: Senior consultants, operators, PE teams, business leaders (mixed technical depth)
-status: draft
----
-```
-
-Below the front matter, include the required human summary block (one-paragraph summary, key topics, scope in/out, assumptions) before the document body begins.
-
-Create the `~/work-docs/ai/reports/` directory if it doesn't exist.
+The **Assumptions** line in the summary block is not boilerplate. Record where the figures came from, the as-of date, and any place where sources conflicted and you wrote to the safest common reading. That is the reader's only signal about which claims are solid.
 
 ### 8. Report back
 
@@ -352,5 +340,6 @@ Otherwise, make the call and proceed.
   - `exemplar-issue.md` — original compact reference. Lower bound on entry density. Canonical for basic structure: shallow heading hierarchy *(`###` for Meta Trend, `####` for sections, bold standalone lines for development titles)*, inline `**Detail:**` / `**Why you care:**` formatting, italic parenthetical clarifications, `------` rules between developments.
   - `exemplar-march-may-2026.md` — mature reference. Upper bound on entry density and canonical for voice and title style: headline-style entry titles *("Codex gains direct computer control...", "Claude completes the Microsoft 365 suite...")*, fully developed descriptive Detail voice *("X is Y's [latest/new] Z, featuring…, excelling at…, replacing/competing with…")*, larger entries (~90–140 words each), and per-section density at scale (15 entries).
 - `references/structure-template.md` — the exact document template with heading hierarchy table, inline formatting conventions, and section ordering rules.
+- `references/deliverable-format.md` — the output contract: cadence, filename pattern, YAML front matter, and the summary block. Authoritative for anything about the file itself rather than the prose inside it.
 - `references/voice-and-banned-phrases.md` — full voice rules, banned phrases, accessibility constraints, and the test for when hedging carries content vs. cushions a missing view.
 - `references/content-priorities.md` — what to include vs. deprioritize, the selection test, and the hunting list of underreported categories.

@@ -4,7 +4,7 @@ A Claude Code skill for generating the **AI Pulse** — a concise, opinionated e
 
 ## What it produces
 
-A monthly markdown briefing covering the 1–2 month window with a sharp meta-trend, news-headline-style entry titles, descriptive Detail sections, and operational "Why you care" lines. Output lands in `~/work-docs/ai/reports/`.
+A monthly markdown briefing with a sharp meta-trend, news-headline-style entry titles, descriptive Detail sections, and operational "Why you care" lines. Published in the first business days of the month covering the prior full calendar month; widens to two months only for a thin month or a missed issue. Output lands in `~/work-docs/ai/reports/` — see `references/deliverable-format.md` for the full output contract.
 
 ## Install
 

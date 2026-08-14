@@ -49,11 +49,11 @@ These don't always make headlines but often matter more:
 - **Office integration depth changes** *(native operations vs. add-in vs. assistant)* — depth matters more than presence.
 - **Pricing model changes** *(seat-based, consumption-based, per-task)* — affects procurement and client billing logic.
 
-## Volume guidance for a <1000 word briefing
+## Volume guidance for a 2,000–3,000 word briefing
 
 - **3–5 sections** (lab vendors + "Other Tools" + Business/Regulation)
-- **12–15 development entries total**
-- **1 meta-trend** in ~150–180 words
+- **12–15 development entries total**, ~135–235 words each
+- **1 meta-trend** in ~230–260 words
 
 Fewer than 12 entries usually means you missed releases — go back and check coverage of each lab and the third-party tool list. More than 15 means you kept items that don't earn their place.
 

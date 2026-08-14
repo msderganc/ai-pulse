@@ -15,7 +15,7 @@ A document a senior consultant would actually forward to a client or partner. Sh
 
 The standing thesis the meta-trend should sharpen: **the tool layer is where AI differentiation is moving — model capability is converging, while the product surface around the models is exploding.** Operating model and integration matters, but the tool releases are the lead story. Every issue's meta-trend should sharpen this thesis with the month's evidence.
 
-**Length target: under 1000 total words.** Earlier versions of this skill targeted 1,500–2,500 words and ran long. The constraint matters — a forwardable executive briefing fits on a phone screen with minimal scrolling.
+**Length target: 2,000–3,000 words.** Calibrated against `references/exemplar-march-may-2026.md`, the approved issue, which runs 3,138 words across 15 entries — treat that as the upper bound. The density is deliberate: each entry carries enough specifics *(dates, numbers, pricing, competitive context)* that a consultant can act on it without opening a browser. Past 3,200 words you kept items that don't earn their place.
 
 ## What this skill is *not*
 
@@ -130,7 +130,7 @@ Meta-trend: [confirmed/adjusted]
 Drafting now.
 ```
 
-Per-section length targets (matching the exemplar) for the draft phase: meta-trend block ~200–220 words; entries ~70–95 words each depending on weight; single-big-story entries ~50 words. The user's selection determines section count, but per-entry density should match the exemplar regardless of how many entries land in each section.
+Per-section length targets (measured from the exemplar) for the draft phase: meta-trend block ~230–260 words; entries ~135–235 words each depending on weight, with ~190 as the median. The user's selection determines section count, but per-entry density should match the exemplar regardless of how many entries land in each section.
 
 ### 3b. Verify each confirmed item with a targeted web search
 
@@ -203,10 +203,10 @@ Group selected items into sections. Standard sections (use only the ones with ma
 
 Lead with the labs (OpenAI, Anthropic, Google) when their releases are the substantive content. "Other Tools Worth Knowing" is not optional padding — it is where Cursor 3, Perplexity Comet, and similar releases live, and these are often the most directly usable items for a working consultant.
 
-Volume guidance for a <1000 word briefing:
+Volume guidance for a 2,000–3,000 word briefing:
 - 12–15 development entries total is typical
-- Each entry is short: 1–3 sentence Detail, 1–2 sentence Why you care
-- Meta trend block ~150–180 words; longer than that and the briefing won't fit the length budget
+- Each entry runs ~135–235 words: 3–5 sentence Detail, 2–3 sentence Why you care
+- Meta trend block ~230–260 words across its sub-blocks
 
 ### 4. Draft each section
 
@@ -250,9 +250,9 @@ Read each entry as a senior consultant scanning the briefing on their phone, and
 
 **Briefing-level checks:**
 
-6. **Per-section density matches exemplar.** Each entry roughly 70–95 words across Detail + Why-you-care; single-big-story entries ~50; meta-trend block ~200–220 total. Entries running over 120 words are flagged for trimming.
+6. **Per-section density matches exemplar.** Each entry roughly 135–235 words across Detail + Why-you-care, median ~190; meta-trend block ~230–260 total. Entries running over 250 words are flagged for trimming; entries under 120 are flagged as thin — either the item lacks substance and should be cut, or verification missed the specifics that would fill it out.
 7. **Voice tells caught.** Quick scan for banned phrases *(see voice-and-banned-phrases.md)*, AI vocabulary creep *("landscape", "additionally", "leverage", "ultimately")*, em-dash overuse, rule-of-three patterns where two would do, formulaic "X. Y. Z." rhythm.
-8. **Meta-trend still tight.** The full block is 200–220 words. Each sub-block *("What's changing", "Where value now sits", "Why this matters", "2026 implication")* is short and earns its place. If the meta-trend has bloated, trim.
+8. **Meta-trend still tight.** The full block is 230–260 words. Each sub-block *("What's changing", "Where value now sits", "Why this matters", "2026 implication")* is short and earns its place. If the meta-trend has bloated, trim.
 9. **Throughline reads top-to-bottom.** Scan section by section: does each section's selections reinforce the meta-trend? If a section reads like standalone news, either tighten the Why-you-cares to draw the connection or rethink the meta-trend.
 10. **Titles-only scan test.** Read just the bolded titles top to bottom. Does a senior consultant get the issue's argument from titles alone? If titles read as a disconnected list, sharpen them.
 
@@ -285,7 +285,17 @@ Blockers to fix before humanizer pass: [list, or "none"]
 
 ### 6. Run the humanizer pass (mandatory)
 
-Once a complete draft exists, invoke the humanizer skill via the Skill tool with the draft as the target. The humanizer is the authoritative style policy for the user's global setup — it catches AI-writing tells that surface even when you think you've been careful. Apply its suggestions, then re-read the result for any places where humanizer's edits flattened a deliberately sharp formulation; restore those.
+Once a complete draft exists, invoke the humanizer skill via the Skill tool. The humanizer is the authoritative style policy for the user's global setup — it catches AI-writing tells that surface even when you think you've been careful. Apply its suggestions, then re-read the result for any places where humanizer's edits flattened a deliberately sharp formulation; restore those.
+
+**Invoke it in embedded mode on the body prose — not file mode on the whole document.** Humanizer's pattern list collides with the AI Pulse format in three specific places, and running it over the finished file would rewrite away the approved house style. Exempt these:
+
+| Humanizer rule | Why it's exempt here |
+| --- | --- |
+| §16 Inline-header vertical lists | `**Detail:**` and `**Why you care:**` are the format's load-bearing labels, not AI decoration |
+| §15 Overuse of boldface | Bold on load-bearing terms is a deliberate scanning aid — see `voice-and-banned-phrases.md`. Still cut bolding that's decorative |
+| §14 Em/en dash ban | En dashes stay in date ranges *(March–May 2026)*, numeric ranges *(53.4%–64.3%)*, and prices *($5/$25)*. **Em dashes in prose are still subject to the rule** |
+
+Everything else applies in full — AI vocabulary, rule-of-three, negative parallelisms, filler, hedging, promotional language, copula avoidance, manufactured punchlines.
 
 Do not skip this step. The user has explicitly required it.
 

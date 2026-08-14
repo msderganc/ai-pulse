@@ -69,3 +69,5 @@ The briefing is opinionated, not contrarian for its own sake. Calibration:
 ## The humanizer relationship
 
 After the draft is complete, the humanizer skill runs a pass that catches AI tells from a broader policy (the user's authoritative style policy). Treat humanizer as a backstop, not a substitute for following these rules during drafting. If humanizer flattens a deliberately sharp formulation during cleanup, restore the original — its job is to remove tells, not to neutralize voice.
+
+Three of humanizer's rules are exempted here because they collide with the AI Pulse format rather than with AI tells: §16 (inline-header lists) would strip the `**Detail:**` / `**Why you care:**` labels, §15 (boldface) would strip the load-bearing emphasis described above, and §14's dash ban would strip en dashes from date ranges, numeric ranges, and prices. Em dashes in prose stay subject to §14. See SKILL.md step 6 for how to invoke it. Everything else in humanizer applies in full — and several of its patterns *(rule-of-three, negative parallelisms, AI vocabulary, hedging)* overlap with this file, so a hit there is a hit here.

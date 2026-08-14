@@ -179,13 +179,13 @@ If regulation drove the month, lead with regulation. The structure serves the th
 - **Omit a section** rather than pad it. A blank OpenAI section is fine if OpenAI didn't do anything operationally meaningful that month.
 - A section can hold a single development if that development carried the section by itself (see the Google entry in the exemplar — one Gemini Flash development).
 
-## Length targets (guidance, not rules)
+## Length targets (measured from `exemplar-march-may-2026.md`)
 
-- Meta trend block: ~250–500 words total across the sub-blocks (more if you use the optional "Where value now sits" list)
-- Each development entry: ~60–180 words total across Detail + Why you care (the exemplar's range)
-- Total document: ~1,500–2,500 words is a comfortable range; longer if a major shift demands it
+- Meta trend block: ~230–260 words total across the sub-blocks *(the exemplar's is 245, including the optional "Where value now sits" list)*
+- Each development entry: ~135–235 words total across Detail + Why you care, median ~190 *(the exemplar's 15 entries span 136–233)*
+- Total document: 2,000–3,000 words; the exemplar's body runs 3,138, which is the upper bound
 
-If the briefing trends toward 3,500+ words, you almost certainly kept items that don't earn their place. Cut.
+If the briefing trends past 3,200 words, you almost certainly kept items that don't earn their place. Cut. If it comes in under 1,800, either the window was genuinely quiet *(say so in the issue)* or verification didn't surface enough specifics to fill the entries out.
 
 ## What the closing should *not* be
 
